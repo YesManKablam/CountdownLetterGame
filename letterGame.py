@@ -34,7 +34,7 @@ print (''.join(anagram))
 
 # Imports the permuation function from itertools and sets up our counter and list for the total permutations
 from itertools import permutations
-j = 1
+j = 0
 perms = []
 
 # This looops 9 times, since the anagram will always be 9 characters long
