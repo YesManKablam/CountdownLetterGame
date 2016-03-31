@@ -6,11 +6,11 @@ with open('newDic.txt', 'r') as fileopen:
 
 
 # Setting up lists here use of generating your anagram
+# They are wieghted as they are in the game
 import random
 anagram = []
-vowels = ['a','e','i','o','u']
-consonant = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','x','z','w','y']
-
+vowels =['a','a','a','a','a','a','a','a','a','e','e','e','e','e','e','e','e','e','e','e','e','i','i','i','i','i','i','i','i','i','o','o','o','o','o','o','o','o','u','u','u','u',]
+consonant =['q','w','w','r','r','r','r','r','r','t','t','t','t','t','t','y','y','p','p','s','s','s','s','d','d','d','d','f','f','g','g','g','j','k','l','l','l','l','z','x','c','c','v','v','b','b','n','n','n','n','n','n','m','m',]
 
 # Loops here will append the required vowels and consonants to the anagram
 # It then fills the remaining space with either consonants or vowels
@@ -29,8 +29,6 @@ print (''.join(anagram))
 
 
 # After displaying the anagram, this alpabetises it, allow for some pretty fast searching
-
-#anagram = ['a','u','c','t','i','o','n','e','d']
 sanagram = (''.join(sorted(anagram)))
 
 def solver(word):
